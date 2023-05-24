@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://use.fontawesome.com/8cbb35222b.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .wrapper{
+            background: #fff;
+            border: 1px solid red;
+            width: 100%;
+            display: flex;
+        }
+        .header-logo{
+            flex: 15%;
+            border: 1px solid brown;
+        }
+        .header-logo img{
+            width: 178px;
+            height: 46px;
+        }
+        .navbar{
+            flex: 70%;
+            border: 1px solid yellow;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            top: 15px;
+        }
+        .navbar ul li{
+            position: relative;
+        }
+        .navbar ul li a{
+            position: relative;
+            top: 15px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            font-weight: 700;
+
+        }
+        .navbar ul li a:hover{
+            color: purple;
+        }
+        .navbar ul li a:hover .icon1{
+            transform: rotate(180deg);
+        }
+        
+        .side-buttons{
+            flex: 15%;
+            border: 1px solid green;
+        }
+        .navlist > .sub-menu{
+            display: block;
+            position: absolute;
+            top: 40px;
+            left: -40px;
+            right: -40px;
+            border: 1px solid red;
+            z-index: 1;
+        }
+
+       
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header-logo">
+            <a href="#">
+            <img src="http://88bbb2d2af1bc0dc2d63-5e43ce298ccfc8fc9ba1efe2c2840af0.r64.cf2.rackcdn.com/umortgage/logo.webp" alt="Header-Logo"> 
+            </a>        
+        </div>
+    
+    <div class="navbar">
+        <ul class="navlist">
+            <li>
+               <a href="#">BUY A HOME</a>
+            </li>
+            <li>
+               <a href="#">REFINANCE</a> 
+            </li>
+            <li>
+               <a href="#">TODAY'S RATES</a>
+            </li>
+            <li>
+               <a href="#">LOAN OPTIONS 
+                <i class="fa fa-angle-down icon1" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">30 Year Fixed Mortgage</a>
+                    </li>
+                    <li>
+                        <a href="#">15 Year Fixed Mortgage</a>
+                    </li>
+                    <li>
+                        <a href="#">75 Year Fixed Mortgage</a>
+                    </li>
+                    <li>
+                        <a href="#">100 Year Fixed Mortgage</a>
+                    </li>
+                    <li>
+                        <a href="#">120 Year Fixed Mortgage</a>
+                    </li>
+                </ul>
+            </a> 
+
+            </li>
+            <li>
+               <a href="#">POPULAR TOOLS
+                <i class="fa fa-angle-down icon1" aria-hidden="true"></i>
+               </a> 
+            </li>
+            <li>
+               <a href="#">ABOUT
+                <i class="fa fa-angle-down icon1" aria-hidden="true"></i>
+               </a> 
+            </li>
+        </ul>
+        
+    </div>
+    <div class="side-buttons">
+
+    </div>
+</div>
+</body>
+</html>

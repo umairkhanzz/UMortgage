@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U Mortgage</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <script src="https://use.fontawesome.com/8cbb35222b.js"></script>
+    <script src="https://use.fontawesome.com/8cbb35222b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
+
+
+    <!-- Demo styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+       /* border: 1px solid red; */
+        padding: 20px 15px 0px 15px;
+      }
+
+      .swiper-slide {
+
+        /* Center slide text vertically */
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+      /*  border: 1px solid yellowgreen; */
+      }
+      .swiper-pagination-bullet{
+          width: 15px;
+          height: 15px;
+          background: #7244e9;
+          margin-right: 200px;
+      }
+      .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+          margin-right: 15px;
+      }
+      swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+          bottom: 90px;
+      }
+      @media screen and (max-width: 399px)
+      {
+        swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+          bottom: 50px;
+      }
+
+      }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+ 
+        <!------------------------------------------Header section-------------------------------------------------------------->
+
+        <div class="header">
+            <div class="container">
+                <strong class="logo">
+                    <a href="#">
+                        <img src="http://88bbb2d2af1bc0dc2d63-5e43ce298ccfc8fc9ba1efe2c2840af0.r64.cf2.rackcdn.com/umortgage/logo.webp" alt="header logo">
+                    </a>
+                </strong>
+                <ul class="menu">
+                    <div class="wrap" onclick="myFunction1(this)">
+                        <div class="menu-1"></div>
+                        <div class="menu-2"></div>
+                        <div class="menu-3"></div>
+                    </div>
+                    <li><a href="#">BUY A HOME</a></li>
+                    <li><a href="#">REFINANCE</a></li>
+                    <li><a href="#">Today’s Rates</a></li>
+                    <li class="drop-down"><a href="#">Loan Options
+                            <i class="fa fa-angle-down icon1" aria-hidden="true"></i>
+                        </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">30 Year Fixed Mortgage</a></li>
+                                    <li><a href="#">15 Year Fixed Mortgage</a></li>
+                                    <li><a href="#">Adjustable Rate Mortgage</a></li>
+                                    <li><a href="#">FHA Loans</a></li>
+                                    <li><a href="#">VA Loans</a></li>
+                                    <li><a href="#">Jumbo Loans</a></li>
+                                </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Popular Tools
+                            <i class="fa fa-angle-down icon1" aria-hidden="true"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Get Pre-Approved</a></li>
+                            <li><a href="#">Refinance Analysis</a></li>
+                            <li><a href="#">Mortgage Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">About
+                            <i class="fa fa-angle-down icon1" aria-hidden="true"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Katrina DiBiase</a></li>
+                            <li><a href="#">Contact Me</a></li>
+                        </ul>
+                    </li>
+               <!--     <li class="response-buttons"><a href="#" class="btn">APPLY</a></li>
+                    <li class="response-buttons"><a href="#" class="btn-primary">(855) 532-3767</a> -->
+
+                </ul>
+                <div class="header_buttons">
+                    <a href="#" class="btn">APPLY</a>
+                   
+                    <a href="#" class="btn-primary">(855) 532-3767</a>
+                    <div class="wrap" onclick="myFunction(this)">
+                        <div class="menu-1"></div>
+                        <div class="menu-2"></div>
+                        <div class="menu-3"></div>
+                    </div>
+
+                
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <!------------------------------------------Header section End-------------------------------------------------------------->
+
+        <!------------------------------------------Hero section-------------------------------------------------------------->
+
+        <div class="hero-section">
+            <div class="hero-text">
+                <strong class="text-index1">
+                    Katrina DiBiase
+                </strong>
+                <p class="text-index2">Senior Loan Originator | NMLS #123456</p>
+                <p class="text-index3">Want to save thousands on your mortgage?</p>
+                <p class="text-index4">Whether you're a first-time buyer or want to refinance at a lower rate, my team can help.</p>
+                <div class="company-type">
+            
+                    <div class="select-box">
+                        <div class="option-container">
+                            
+                            <div class="option">
+                                <input type="radio" class="radio" id="automobiles" name="category"/>
+                                <label for="automobiles">Home Purchase <!-- <i class="fa fa-angle-down icon2" aria-hidden="true"></i> --></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="music" name="category"/>
+                                <label for="music">Home Refinance</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="travel" name="category"/>
+                                <label for="travel">Mortgage</label>
+                            </div>
+                        </div>
+                        <div class="select-options">
+                            <span class="loan-text">Select Loan Type</span>
+                        </div>
+                    </div>
+                       <button class="btn" type="button" disabled>GET STARTED NOW</button>
+            </div>  
+            </div>
+            <div class="hero-img">
+                <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/katrina.webp" alt="Hero Image">
+            </div>
+
+        </div>
+
+        <!------------------------------------------Hero section End-------------------------------------------------------------->
+
+        <!------------------------------------------Comments Testimonials-------------------------------------------------------------->
+
+        <div class="comment-testimonial">
+            <strong class="comment-heading">Client Reviews</strong>
+
+            <!------------------------------------------ Swiper -------------------------------------------------------------->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <h3 class="testimonial-text1">Lorem ipsum dolor sit amet, consetur adipiscing elit. Vestibulum sodales</h3>
+            <p class="testimonial-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales magna
+                quis scelerisque dictum. Vestim ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+                Donec molestie ornare</p>
+                <div class="client-information">
+                    <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/shirley-mackenzie.webp" alt="Client Picture">
+                    <span class="client-address">
+                        <h4 class="client-name">Shirley Mackenzie</h4>
+                        <h5 class="client-position">First-time Homebuyer Client</h5>
+                         <span class="reviews-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                         </span>
+                    </span>
+                </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <h3 class="testimonial-text1">Nunc lectus orci, dignissim in mauris eget, ultricies rutrum nulla.</h3>
+            <p class="testimonial-text2">Nunc lectus orci, dignissim in mauris eget, ultricies rutrum nulla. Vestibulum
+                  tempus congue condimentum. Phasellus ut blandit leo. Nam laoreet fringilla lectus, sed feugiat felis lobortis nec.</p>
+                <div class="client-information">
+                    <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/tyler-hodgman.webp" alt="Client Picture">
+                    <span class="client-address">
+                        <h4 class="client-name">Tyler Hodgman</h4>
+                        <h5 class="client-position">Realtor Partner</h5>
+                         <span class="reviews-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                         </span>
+                    </span>
+                </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <h3 class="testimonial-text1">Quisque egestas odio id felis elementum auctor. Etiam faucibus</h3>
+            <p class="testimonial-text2">Etiam non vehicula justo, blandit luctus lectus. Sed tincidunt purus eget tellus consequat auctor. 
+                Mauris convallis metus sed mi auctor pellentesque. Donec venenatis mi et ex posuere, ut faucibus turpis vulputate.</p>
+                <div class="client-information">
+                    <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/thomas-jones.webp" alt="Client Picture">
+                    <span class="client-address">
+                        <h4 class="client-name">Thomas Jones</h4>
+                        <h5 class="client-position">Home Refinance Client</h5>
+                         <span class="reviews-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                         </span>
+                    </span>
+                </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <h3 class="testimonial-text1">Nam ut lectus egestas mauris tincidunt aliquam. Cras ipsum dolor</h3>
+            <p class="testimonial-text2">Curabitur dapibus orci vel imperdiet lacinia. Ut tellus diam, convallis at nisl nec, 
+                dictum porttitor mi. Phasellus in dolor lorem. Nulla sodales tellus nisi, id gravida lacus consectetur enean vel 
+                gravida arcutincidunt</p>
+                <div class="client-information">
+                    <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/sebastian-solomon.webp" alt="Client Picture">
+                    <span class="client-address">
+                        <h4 class="client-name">Sebastian Solomon</h4>
+                        <h5 class="client-position">Realtor Partner</h5>
+                         <span class="reviews-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                         </span>
+                    </span>
+                </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <h3 class="testimonial-text1">Lorem ipsum dolor sit amet, consetur adipiscing elit. Vestibulum sodales</h3>
+            <p class="testimonial-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales magna
+                quis scelerisque dictum. Vestim ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+                Donec molestie ornare</p>
+                <div class="client-information">
+                    <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/shirley-mackenzie.webp" alt="Client Picture">
+                    <span class="client-address">
+                        <h4 class="client-name">Shirley Mackenzie</h4>
+                        <h5 class="client-position">First-time Homebuyer Client</h5>
+                         <span class="reviews-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                         </span>
+                    </span>
+                </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <h3 class="testimonial-text1">Nunc lectus orci, dignissim in mauris eget, ultricies rutrum nulla.</h3>
+            <p class="testimonial-text2">Nunc lectus orci, dignissim in mauris eget, ultricies rutrum nulla. Vestibulum
+                  tempus congue condimentum. Phasellus ut blandit leo. Nam laoreet fringilla lectus, sed feugiat felis lobortis nec.</p>
+                <div class="client-information">
+                    <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/tyler-hodgman.webp" alt="Client Picture">
+                    <span class="client-address">
+                        <h4 class="client-name">Tyler Hodgman</h4>
+                        <h5 class="client-position">Realtor Partner</h5>
+                         <span class="reviews-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                         </span>
+                    </span>
+                </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+      
+      <!------------------------------------------ Swiper End-------------------------------------------------------------->
+
+        </div>
+
+        <!------------------------------------------Comments Testimonials End-------------------------------------------------------------->
+
+        <!------------------------------------------ 6-cards section ------------------------------------------------------------->
+
+        <div class="six-card">
+            <div class="six-text" >
+                <div class="six-text1">
+                    <h2>6 Ways We Help You Lock in Lower Rates</h2>
+                </div>
+                <div class="text-border"></div>
+                    <div class="six-text2">
+                        <span>Let our experienced team of Loan Originators guide you through the buying    
+                        or refinancing process quickly, efficiently, and confidently.</span>
+                    </div>
+                </div>
+            <div class="cards-section">
+                <div class="card-1 tab-event" data-id="tab1">
+                    <div class="card-description">
+                        <h3 class="card-number">01</h3>
+                        <p class="card-text">Secure Your Home Purchase Loan</p>
+                    </div>
+                </div>
+
+                <div class="card-1 tab-event" data-id="tab2">
+                    <div class="card-description">
+                        <h3 class="card-number">02</h3>
+                        <p class="card-text">Refinance for Better Rates</p>
+                    </div>
+                </div>
+                <div class="card-1 tab-event" data-id="tab3">
+                    <div class="card-description">
+                        <h3 class="card-number">03</h3>
+                        <p class="card-text">Compare Rates & Pick the Best</p>
+                    </div>
+                </div>
+                <div class="card-1 tab-event" data-id="tab4">
+                    <div class="card-description">
+                        <h3 class="card-number">04</h3>
+                        <p class="card-text">Get Your Loan Funded Faster</p>
+                    </div>
+                </div>
+                <div class="card-1 tab-event" data-id="tab5">
+                    <div class="card-description">
+                        <h3 class="card-number">05</h3>
+                        <p class="card-text">Evaluate Your Property</p>
+                    </div>
+                </div>
+                <div class="card-1 tab-event" data-id="tab6">
+                    <div class="card-description">
+                        <h3 class="card-number">06</h3>
+                        <p class="card-text">Get a Cash-Out Refinance</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-panel">
+            <div class="tab-panel-content" id="tab1">
+                <div class="home-purchase">
+                    <div class="home-purchase1">
+                        <p class="home-purchase2">Secure Your Home Purchase Loan</p>
+                        <p class="home-purchase3">We’ll help you apply for, compare, and choose a purchase loan that makes your dream home an affordable reality!</p>
+                        <a href="#" class="btn">GET STARTED NOW</a>
+                    </div>
+                    <div class="home-purchase4">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/seure-home.webp" alt="Home Purchase Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel-content" id="tab2">
+                <div class="home-purchase">
+                    <div class="home-purchase1">
+                        <p class="home-purchase2">Refinance for Better Rates</p>
+                        <p class="home-purchase3">Take advantage of the market to significantly lower your monthly payment, interest, or both. How will you use the money we put back in your pocket?</p>
+                        <a href="#" class="btn">GET STARTED NOW</a>
+                    </div>
+                    <div class="home-purchase4">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/seure-home.webp" alt="Home Purchase Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel-content" id="tab3">
+                <div class="home-purchase">
+                    <div class="home-purchase1">
+                        <p class="home-purchase2">Compare Rates & Pick the Best</p>
+                        <p class="home-purchase3">You wouldn't accept the first offer at the car lot, so don't just take your first mortgage offer. Use our rate comparison tool to shop around and find the terms that work best for you.</p>
+                        <a href="#" class="btn">GET STARTED NOW</a>
+                    </div>
+                    <div class="home-purchase4">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/seure-home.webp" alt="Home Purchase Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel-content" id="tab4">
+                <div class="home-purchase">
+                    <div class="home-purchase1">
+                        <p class="home-purchase2">Get Your Loan Funded Faster</p>
+                        <p class="home-purchase3">Other lenders giving you the runaround? Our fast funding options mean you'll never miss out on the house you really want.</p>
+                        <a href="#" class="btn">GET STARTED NOW</a>
+                    </div>
+                    <div class="home-purchase4">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/seure-home.webp" alt="Home Purchase Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel-content" id="tab5">
+                <div class="home-purchase">
+                    <div class="home-purchase1">
+                        <p class="home-purchase2">Evaluate Your Property</p>
+                        <p class="home-purchase3">Know where you stand. With your up-to-date property evaluation in hand, you'll be better equipped to choose the loan terms that fit your goals.</p>
+                        <a href="#" class="btn">GET STARTED NOW</a>
+                    </div>
+                    <div class="home-purchase4">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/seure-home.webp" alt="Home Purchase Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel-content" id="tab6">
+                <div class="home-purchase">
+                    <div class="home-purchase1">
+                        <p class="home-purchase2">Get a Cash-Out Refinance</p>
+                        <p class="home-purchase3">Take advantage of your home's equity with a cash-out refinance — and put your home loan to work for you.</p>
+                        <a href="#" class="btn">GET STARTED NOW</a>
+                    </div>
+                    <div class="home-purchase4">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/seure-home.webp" alt="Home Purchase Logo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="video-section">
+            <p class="video-description">Why <span class="video-description-subtext">U</span>s</p>
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/EngW7tLk6R8?transparent=0"></iframe>
+              </div>
+              <div class="video-button">
+                <a href="#" class="btn">GET MY FREE RATE QUOTE NOW</a>
+            </div>
+        </div>
+        <div class="three-carts">
+        <div class="three-cart">
+            <div class="three-cart-text">
+                <p class="three-cart-text1">Get your loan funded - in less than 30 days!</p>
+                <p class="three-cart-text2">Get fast, custom loan quotes to compare. Fill out our streamlined, 100% online loan application. 
+                    Move through the approval process quickly and seamlessly. When you work with UMortgage for your 
+                    home loan or refinance, you can get your money and do what you want with it — in as soon as 30 days!</p>
+            </div>
+            
+        </div>
+        <div class="three-cart-section">
+            <div class="three-cart1">
+                <div class="three-cart1-subpart">
+                    <div class="three-cart-img">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/home-purchase.png" alt="Three cart Picture">
+                    </div>
+                    <p class="three-cart-heading">Purchase</p>
+                    <p class="three-cart-text">
+                        Finding a loan option that supports your financial goals is the first step towards homeownership. 
+                        We're here to make that happen.
+                    </p>
+                    <div class="three-cart-link">
+                        <a href="#">GET STARTED NOW</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="three-cart2">
+                <div class="three-cart2-subpart">
+                    <div class="three-cart-img">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/strategic-refinance.webp" alt="Three cart Picture">
+                    </div>
+                    <p class="three-cart-heading">Refinance</p>
+                    <p class="three-cart-text">
+                        If you're considering adjusting your rate, term, or type of mortgage loan, we’ll help you strike while the iron is hot.
+                    </p>
+                    <div class="three-cart-link">
+                        <a href="#">GET STARTED NOW</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="three-cart3">
+                <div class="three-cart3-subpart">
+                    <div class="three-cart-img">
+                        <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/best-rate.webp" alt="Three cart Picture">
+                    </div>
+                    <p class="three-cart-heading">2nd Opinion</p>
+                    <p class="three-cart-text">
+                        I have a quote from another lender to compare.
+                    <div class="three-cart-link">
+                        <a href="#">GET STARTED NOW</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="getCost-section">
+        <div class="getCost-section-index">
+            <p class="cost-section1">Get a No-Cost Quote in Just <span class="cost-section2">30 Seconds!</span></p>
+            <p class="cost-section3">Mortgage rates change daily and vary based on location, your personal finances, <span class="cost-section4">and other factors.</span> </p>
+        <div class="getCost-button">
+            <a href="#" class="btn">GET MY QUOTE</a>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-section-1">
+            <div class="footer-section-index1">
+                <img src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/footer-logo.png" alt="">
+                <p>NMLS #123456</p>
+                <p>UMortgage NMLS #1457759</p>
+            </div>
+        <div class="footer-section-10">
+            <div class="footer-section-index2">
+                <div class="contact-description">
+                    <p>Contact Me</p>
+                </div>
+                <div class="address-description">
+                    <p>100 N 18th Street <span class="address-description-subindex">Philadelphia, PA 19103</span></p>
+                </div>
+                <div class="phone-description">
+                    <p>(855) 532-3767</p>
+                </div>
+                <div class="email-description">
+                    <p>Send Me an Email</p>
+                </div>
+            </div>
+            <div class="footer-section-index3">
+                <div class="footer-section-index3-heading">
+                    <p>Popular Pages</p>
+                </div>
+                <div class="popular-pages-link">
+                    <p><a href="#">Home Purchase Qualifier</a></p>
+                    <p><a href="#">Refinance Rate Checker</a></p>
+                    <p><a href="#">Today's Mortgage Rates</a></p>
+                    <p><a href="#">Site Accessibility</a></p>
+                </div>
+            </div>
+            <div class="footer-section-index4">
+                <p>Follow Me!</p>
+                <div class="social-icons">
+                    <div class="social-icons1"></div>
+                    <div class="social-icons2"></div>
+                </div>
+            </div>
+         </div>
+        </div>
+        <div class="footer-line-break"></div>
+        <div class="footer-section-2">
+            <p>Hello Dummy Footer</p>
+        </div>
+    </footer>
+        
+        
+        
+        
+        
+
+       
+
+
+        
+    </div>
+
+    <!-- Initialize Swiper -->    <script>
+        var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                breakpoints: {
+    
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1100: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 23,
+            },
+          },
+        });
+      </script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="index.js"></script>
+    <script>
+        $('.drop-down').hover(function() {
+            $(this).find('.sub-menu').slideDown("fast");
+            $(this).addClass("opened");
+	    }, function() {
+                $(this).find('.sub-menu').slideUp("fast");
+                $(this).removeClass("opened");
+        }); 
+         function myFunction(x) {
+                x.classList.toggle("change");
+                $(".menu").slideDown("fast");
+
+            }
+        function myFunction1(x) {
+        $(".menu").slideUp("fast");
+
+           }
+        $(window).on('resize', function(){
+            var win = $(this); //this = window
+            if (win.width() >= 1039) {
+            $(".menu").css("display", "flex");
+        }
+        if (win.width() <= 1038) { 
+            $(".menu").css("display", "none");
+         }
+    });
+    const selected = document.querySelector(".select-options");
+    const optionsContainer = document.querySelector(".option-container");
+    const optionsList = document.querySelectorAll(".option");
+
+    selected.addEventListener("click", () => {
+        optionsContainer.classList.toggle("active");
+    });
+
+    optionsList.forEach(o => {
+        o.addEventListener("click", () => {
+        selected.innerHTML = o.querySelector("label").innerHTML;
+        optionsContainer.classList.remove("active");
+    });
+});
+
+//------------------------------------------------ Display Different Cards Section -----------------------------------------//
+
+
+
+
+      $('.tab-panel-content').hide();
+      $('#tab1').show();
+   $('body').on('click','.tab-event', function(e){
+       e.preventDefault();
+       var content_selector = $(this).attr('data-id');
+       $('.tab-panel-content').hide();
+       $('#'+content_selector).show();
+   })
+
+
+
+</script>
+    
+</body>
+</html>

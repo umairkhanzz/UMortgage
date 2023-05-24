@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+     .mainNav{
+  width: 100%;
+  background: black;
+  font-family: 'Avenir', sans-serif;
+ }
+.navicon{
+  font-size: 40px;
+  margin: 10px 25px ;
+  float: right;
+  color: red;
+ }
+.mainNavDropDown{
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: none;
+ }
+.mainNavDropDown li{
+  font-size: 20px;
+  padding: 25px;
+  width: 100%;
+  background: seashell;
+  border-bottom: 1px solid black;
+ }
+.mainNavDropDown li:last-child{
+  border-bottom: none;
+ }
+.mainNavDropDown li:hover{
+  background: black;
+  color: seashell
+ }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="nav-class">
+        <a href="#" class = "mainNav clearfix">
+         <p class = "navicon">&#9776;</p>
+        </a>
+        <ul class = "mainNavDropDown clearfix">
+          <li class="home-class">Home</li>
+          <li>About</li>
+          <li>Work</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+       </nav>
+
+
+       <script>
+       $('.navicon').on('click', function(){
+        $('.mainNavDropDown').slideToggle(200);
+       });
+    </script>
+</body>
+</html>

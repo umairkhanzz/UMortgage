@@ -1,0 +1,97 @@
+  <div class="three-cart-container">
+        <div class="three-cart-row">
+            <div class="three-cart-box">
+                <img class="three-cart-image1" src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/home-purchase.png" alt="">
+                <p class="three-cart-headings">Purchase</p>
+                <p class="three-cart-texts">
+                    Finding a loan option that supports your financial goals is the first step towards 
+                    homeownership. We're here to make that happen.
+                </p>
+                    <a href="#">GET STARTED NOW</a>
+            </div>
+            <div class="three-cart-box">
+                <img class="three-cart-image2" src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/strategic-refinance.webp" alt="">
+                <p class="three-cart-headings">Refinance</p>
+                <p class="three-cart-texts">
+                    If you're considering adjusting your rate, term, or type of mortgage loan,
+                    we’ll help you strike while the iron is hot.
+                </p>
+                    <a href="#">GET STARTED NOW</a>
+            </div>
+            <div class="three-cart-box">
+                <img class="three-cart-image3" src="https://ba83337cca8dd24cefc0-5e43ce298ccfc8fc9ba1efe2c2840af0.ssl.cf2.rackcdn.com/umortgage/best-rate.webp" alt="">
+                <p class="three-cart-headings">2nd Opinion</p>
+                <p class="three-cart-texts">
+                    I have a quote from another lender to compare.
+                </p>
+                    <a href="#">GET STARTED NOW</a>
+            </div>
+        </div>
+    </div>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.three-cart-container {
+  width: 1350px;
+  max-width: 100%;
+  margin: -180px auto 20px auto;
+  padding: 0px 10px 0px 10px;
+  /*height: 800px;*/
+  font-family: hk-nova;
+  z-index: 3;
+}
+.three-cart-row {
+  display: flex;
+  justify-content: space-between;
+}
+.three-cart-box {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 4px 59px 0 rgb(29 34 55 / 15%);
+}
+.slick-initialized .slick-slide {
+  display: flex !important;
+}
+
+.three-cart-box .three-cart-image1 {
+  width: 119px;
+  height: 134px;
+  margin: 35px 0px 10px 0px;
+}
+.three-cart-box .three-cart-image2 {
+  width: 113px;
+  height: 122px;
+  margin: 35px 0px 10px 0px;
+}
+.three-cart-box .three-cart-image3 {
+  width: 115px;
+  height: 115px;
+  margin: 40px 0px 10px 0px;
+}
+.three-cart-headings {
+  font-size: 20px;
+  font-weight: 700;
+  color: #22263c;
+  margin: 24.8px 0px 24.8px 0px;
+}
+.three-cart-texts {
+  font-size: 16px;
+  font-weight: 500;
+  color: #36425d;
+  margin: 0px 0px 30px 0px;
+  padding: 0px 25px 0px 25px;
+  text-align: center;
+}
+.three-cart-box a {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7244e9;
+  margin-bottom: 30px;
+  letter-spacing: 0.6px;
+}
